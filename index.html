@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Jeison Desenvolvedor Web</title>
+ <!-- |Links| -->
+  <!-------| Favicon| ------->
+  <link rel="shortcut icon" href="./img//icons8-dev-16.png" type="image/x-icon">
+  <!-------| CSS only| ------->
+  <link rel="stylesheet" href="./style//style.css">
+  <link rel="stylesheet" href="./style//mario.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!------ |JavaScript |------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- |Header| -->
+  <section class="banner" id="sec">
+    <header>
+      <span class="logo">&lt;JR/&gt;</span>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <!-- |About Me|-->
+    <div class="content" id="spanAbout" style="display:none;">
+      <h2>Ola,<br>Me Chamo <span>Jeison Rothmund </span></h2>
+      <p>Atualmente trabalho como Desenvolvedor full stack na JustNew Sistemas Cloud. Estou cursando Analise e desenvolvimento de sistemas, Além do trabalho, também sou um entusiasta de código aberto e Crio projetos autônomos que auxiliam na resolução de problemas.
+      Meus interesses estão em resolver problemas relacionados a sistemas de software distribuídos em larga escala.
+      </p>
+      <a href="https://drive.google.com/file/d/1sZGjWDoGf_YGbJtEYNu3crgbsFW9UtLs/view?usp=sharing">Baixar CV</a>
+    </div>
+     <!------|Menu de links Expostos na tela principal|------>
+    <ul class="sci">
+      <li>
+        <a href="https://twitter.com/jeisuutoop">
+          <img src="./img//twitter.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/jeisudev">
+          <img style="max-width:40px;" src="./img//kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jeison-rothmund-086038225/">
+          <img src="./img//linkedin.png">
+        </a>
+      </li>
+    </ul>
+     <!------|Animation Home page|------>
+  <div class="animationImg">
+    <img src="./img//hero-img.png" alt="imgHome">
+  </div>
+   <!------|Skills Page|------>
+  <div id="skills" style="display: none; width:800px;">
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">HTML</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">CSS</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">Java Script</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">ReactJs</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">PHP</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">MySQL</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
+    </div>
+    <p style="color:white; margin-bottom:0; margin-top:1rem;">Bootstrap</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+    </div>
+  </div>
+  <!------|Portifolio Page|------>
+        
+  </div>
+  <!------|Teams Page|------>
+  <div id="teams" style="display: none; width:800px;">
+  </div>
+</div>
+  <!------|Contato Page|------>
+  <div id="contato" style="display: none; width:800px; ">
+    <form action="index.php" method="POST">
+      <div class="mb-3">
+      <label style="color:white;" for="exampleFormControlInput1" class="form-label">Email de contato</label>
+        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label style="color:white;" for="exampleFormControlTextarea1" class="form-label">Deixe sua Mensagem</label>
+        <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button name="submit" type="submit" id="enviaContato" class="btn btn-primary">Enviar</button>
+    </form>
+    <!------|Validador de campos de mensagem|------>
+   
+    <!------|integracao com banco de dados pegando valores de input|------>
+    <!--<?php  
+      if(isset($_POST['submit'])){
+
+        include_once('./db/conexao.php');
+
+        $email = $_POST['email'];
+        $mensagem = $_POST['mensagem'];
+
+        $result = mysqli_query($conexao ,"INSERT INTO dados_clientes(email, mensagem) VALUES('$email','$mensagem')");
+      }
+    ?>-->
+        <!------|Modal|------>
+        <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Aviso !!</h5>
+            <button type="button" id="closeModalBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Preencha os dados corretamente..</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="closeModal" class="btn btn-primary">Continuar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <div id="navigation">
+    <ul>
+        <li>
+          <a id="homeSpan">Home</a>
+        </li>
+        <li>
+          <a id="aboutSpan" >About Me</a>
+        </li>
+        <li>
+          <a id="skillsSpan">SKills</a>
+        </li>
+        <!--li>
+          <a id="portifolioSpan">Portfolio</a>
+        </!--li>
+        <li>
+          <a id="teamSpan">Team</a>
+        </li>-->
+        <li>
+          <a id="contactSpan">Contact</a>
+        </li>
+      </ul>
+    </div>
+  <script type="text/javascript">
+    //function que ativa o menu no click
+    function toggle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+    //funcao para chamar a nav e todas as suas functions trazendo a tela os components;
+    $(document).ready(function(){
+      $('#aboutSpan').click(function(){
+        $('#spanAbout').css('display','block');
+        $('.animationImg, #skills, #portifolio, #teams, #contato').css('display','none');
+        $('#sec , #navigation').removeClass('active');
+      });
+      $('#homeSpan').click(function(){
+        $('#spanAbout, #skills, #portifolio, #teams,#contato').css('display','none');
+        $('.animationImg').css('display','block');
+        $('#sec , #navigation').removeClass('active');
+      });
+      $('#skillsSpan').click(function(){
+        $('#spanAbout, .animationImg, #portifolio, #teams, #contato').css('display','none');
+        $('#skills').css('display','block');
+        $('#sec , #navigation').removeClass('active');
+      });
+      $('#portifolioSpan').click(function(){
+        $('#spanAbout, .animationImg, #skills, #teams, #contato').css('display','none');
+        $('#portifolio').css('display','block');
+        $('#sec , #navigation').removeClass('active');
+      });
+      $('#teamSpan').click(function(){
+        $('#spanAbout, .animationImg, #skills, #portifolio, #contato').css('display','none');
+        $('#teams').css('display','block');
+        $('#sec , #navigation').removeClass('active');
+      });
+      $('#contactSpan').click(function(){
+        $('#spanAbout, .animationImg, #skills, #portifolio, #teams').css('display','none');
+        $('#contato').css('display','block');
+        $('#sec , #navigation').removeClass('active');
+      });
+    });
+    //Funcao que envia contato e retorna modal e fecha o mesmo
+    $('#enviaContato').click(function(){
+      var email = $('#exampleFormControlInput1').val();
+      var texto = $('#exampleFormControlTextarea1').val();
+      $('.modal').show()
+    });
+    $('#closeModal').click(function(){
+      $('.modal').hide()
+    });
+    $('#closeModalBtn').click(function(){
+      $('.modal').hide()
+    });
+  </script>
+</body>
+</html>
