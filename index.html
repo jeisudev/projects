@@ -93,17 +93,8 @@
 </div>
   <!------|Contato Page|------>
   <div id="contato" style="display: none; width:800px; ">
-    <form action="index.php" method="POST">
-      <div class="mb-3">
-      <label style="color:white;" for="exampleFormControlInput1" class="form-label">Email de contato</label>
-        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label style="color:white;" for="exampleFormControlTextarea1" class="form-label">Deixe sua Mensagem</label>
-        <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button name="submit" type="submit" id="enviaContato" class="btn btn-primary">Enviar</button>
-    </form>
+    <button id="ChamarWhats" type="button">WhatsApp</button>
+  </div>
     <!------|Validador de campos de mensagem|------>
    
     <!------|integracao com banco de dados pegando valores de input|------>
@@ -160,59 +151,6 @@
         </li>
       </ul>
     </div>
-  <script type="text/javascript">
-    //function que ativa o menu no click
-    function toggle(){
-      var sec = document.getElementById('sec');
-      var nav = document.getElementById('navigation');
-      sec.classList.toggle('active')
-      nav.classList.toggle('active')
-    }
-    //funcao para chamar a nav e todas as suas functions trazendo a tela os components;
-    $(document).ready(function(){
-      $('#aboutSpan').click(function(){
-        $('#spanAbout').css('display','block');
-        $('.animationImg, #skills, #portifolio, #teams, #contato').css('display','none');
-        $('#sec , #navigation').removeClass('active');
-      });
-      $('#homeSpan').click(function(){
-        $('#spanAbout, #skills, #portifolio, #teams,#contato').css('display','none');
-        $('.animationImg').css('display','block');
-        $('#sec , #navigation').removeClass('active');
-      });
-      $('#skillsSpan').click(function(){
-        $('#spanAbout, .animationImg, #portifolio, #teams, #contato').css('display','none');
-        $('#skills').css('display','block');
-        $('#sec , #navigation').removeClass('active');
-      });
-      $('#portifolioSpan').click(function(){
-        $('#spanAbout, .animationImg, #skills, #teams, #contato').css('display','none');
-        $('#portifolio').css('display','block');
-        $('#sec , #navigation').removeClass('active');
-      });
-      $('#teamSpan').click(function(){
-        $('#spanAbout, .animationImg, #skills, #portifolio, #contato').css('display','none');
-        $('#teams').css('display','block');
-        $('#sec , #navigation').removeClass('active');
-      });
-      $('#contactSpan').click(function(){
-        $('#spanAbout, .animationImg, #skills, #portifolio, #teams').css('display','none');
-        $('#contato').css('display','block');
-        $('#sec , #navigation').removeClass('active');
-      });
-    });
-    //Funcao que envia contato e retorna modal e fecha o mesmo
-    $('#enviaContato').click(function(){
-      var email = $('#exampleFormControlInput1').val();
-      var texto = $('#exampleFormControlTextarea1').val();
-      $('.modal').show()
-    });
-    $('#closeModal').click(function(){
-      $('.modal').hide()
-    });
-    $('#closeModalBtn').click(function(){
-      $('.modal').hide()
-    });
-  </script>
+  <script src="js/functionsApp.js" ></script>
 </body>
 </html>
