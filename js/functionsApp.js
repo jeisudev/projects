@@ -38,7 +38,7 @@
       $('#sec , #navigation').removeClass('active');
     });
   });
-  //Funcao que envia contato e retorna modal e fecha o mesmo
+  //Funcao que abre o whats app
   $('#ChamarWhats').click(function(){
     window.open('https://wa.me/5551997368169');
   });

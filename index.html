@@ -93,42 +93,29 @@
 </div>
   <!------|Contato Page|------>
   <div id="contato" style="display: none; width:800px; ">
-    <button id="ChamarWhats" type="button">WhatsApp</button>
-  </div>
-    <!------|Validador de campos de mensagem|------>
-   
-    <!------|integracao com banco de dados pegando valores de input|------>
-    <!--<?php  
-      if(isset($_POST['submit'])){
-
-        include_once('./db/conexao.php');
-
-        $email = $_POST['email'];
-        $mensagem = $_POST['mensagem'];
-
-        $result = mysqli_query($conexao ,"INSERT INTO dados_clientes(email, mensagem) VALUES('$email','$mensagem')");
-      }
-    ?>-->
-        <!------|Modal|------>
-        <div class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Aviso !!</h5>
-            <button type="button" id="closeModalBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Preencha os dados corretamente..</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" id="closeModal" class="btn btn-primary">Continuar</button>
+    <!------|Modal|------>
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contato</h5>
+              <button type="button" id="closeModalBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <span><strong>Email:</strong> jeisonrothmund97@gmail.com</span><br/>
+                <span><span>WhatsApp:</span> Clique no Botao Abaixo</span><br/>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" id="ChamarWhats" class="btn btn-primary">WhatsApp</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div>     
 </section>
- 
   <div id="navigation">
     <ul>
         <li>
