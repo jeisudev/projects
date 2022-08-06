@@ -36,6 +36,7 @@
       $('#spanAbout, .animationImg, #skills, #portifolio, #teams').css('display','none');
       $('#contato').css('display','block');
       $('#sec , #navigation').removeClass('active');
+      $('#modal').show();
     });
   });
   //Funcao que abre o whats app
