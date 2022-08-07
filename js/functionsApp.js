@@ -34,14 +34,10 @@
     });
     $('#contactSpan').click(function(){
       $('#spanAbout, .animationImg, #skills, #portifolio, #teams').css('display','none');
-      $('#contato').css('display','block');
+      $('#homeSpan').css('display','block');
       $('#sec , #navigation').removeClass('active');
-      $('#modal').show();
+      window.open('https://wa.me/5551997368169');
     });
-  });
-  //Funcao que abre o whats app
-  $('#ChamarWhats').click(function(){
-    window.open('https://wa.me/5551997368169');
   });
   $('#closeModal').click(function(){
     $('.modal').hide()
