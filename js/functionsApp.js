@@ -33,8 +33,6 @@
       $('#sec , #navigation').removeClass('active');
     });
     $('#contactSpan').click(function(){
-      $('#spanAbout, .animationImg, #skills, #portifolio, #teams').css('display','none');
-      $('#homeSpan').css('display','block');
       $('#sec , #navigation').removeClass('active');
       window.open('https://wa.me/5551997368169');
     });
