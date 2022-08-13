@@ -50,14 +50,14 @@
     $.ajax({
         type: "POST",
         url: '../db/conexao.php',
-        async: true, 
-        acept: 'json',
-        sucess: function(){
-          console.log('sucesso');
-        },
-        erro: function(){
-          console.log('Erro de requisicao');
-        },
+        async: false, 
+        //acept: 'json',
+          sucess: function(){
+            console.log('sucesso');
+          },
+          erro: function(){
+            console.log('Erro de requisicao');
+          },
         });
     });
 
