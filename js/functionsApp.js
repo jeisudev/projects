@@ -48,16 +48,18 @@
  var email =  $('#exampleFormControlInput1').val();
   $('#teamSpan').click(function(){
     $.ajax({
-        type: "POST",
-        url: '../db/conexao.php',
-        async: false, 
-        //acept: 'json',
-          sucess: function(){
-            console.log('sucesso');
-          },
-          erro: function(){
-            console.log('Erro de requisicao');
-          },
-        });
-    });
+      type: 'POST',
+      url: 'conexao.php',
+      data:   data,
+      dataType: 'html',
+
+      success: function(response) {
+          window.location.replace("conexao.php");
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
+          console.log(xhr, ajaxOptions, thrownError);
+          $("body").html('ATENÇÃO! Ocorreu um erro ao tentar Logar');
+      }
+  });
+});
 
