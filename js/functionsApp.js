@@ -46,26 +46,18 @@
   //requisicao de banco de dados ajax;
  var mensagem =  $('#exampleFormControlTextarea1').val();
  var email =  $('#exampleFormControlInput1').val();
-  $('#enviaContato').click(function(){
+  $('#teamSpan').click(function(){
     $.ajax({
         type: "POST",
-        url: 'conexao.php',
-        data: 'site_jeison_dados',
-        async: 'json', 
-        success: function (data) {
-            alert("Retorno Ajax ok");
-            function select(tx) { 
-                tx.executeSql();
-                app.selectDB(); 
-            }
-            function errorCB() {
-                alert("ERROCB");
-            }
-            function sucess() {
-                alert("Atualizado!");
-            }
-            
-            }
+        url: '../db/conexao.php',
+        async: true, 
+        acept: 'json',
+        sucess: function(){
+          console.log('sucesso');
+        },
+        erro: function(){
+          console.log('Erro de requisicao');
+        },
         });
     });
 
