@@ -49,7 +49,7 @@
   $('#teamSpan').click(function(){
     $.ajax({
       type: 'POST',
-      url: 'conexao.php',
+      url: '',
       data:   data,
       dataType: 'html',
 
